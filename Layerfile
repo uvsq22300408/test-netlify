@@ -5,6 +5,7 @@ MEMORY 2G
 
 RUN curl -fsSL https://deb.nodesource.com/setup_22.x -o nodesource_setup.sh
 RUN bash nodesource_setup.sh
+RUN sudo apt-get install -y nodejs
 RUN sudo npm install npm@latest -g
 RUN sudo npm install next
 
