@@ -3,7 +3,7 @@ FROM vm/ubuntu:18.04
 
 MEMORY 2G
 
-RUN curl -sL https://deb.nodesource.com/setup_14.x | bash && apt-get install -y nodejs
+RUN curl -fsSL https://deb.nodesource.com/setup_22.x -o nodesource_setup.sh | bash nodesource_setup.sh
 RUN sudo npm install npm@latest -g
 RUN sudo npm install next
 
